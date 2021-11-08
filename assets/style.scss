@@ -1,0 +1,127 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
+.nav_list{
+    display: flex;
+    .nav_item{
+        display: block;
+        .nav_item{
+            display: block;
+            padding: 10;
+            .nav_link{
+                margin: 10px;
+            }
+        }
+    }
+}
+
+.box{
+    border: {
+        radius: 5px;
+    } 
+    &-item{
+        display: block;
+    }
+}
+
+
+main{
+    .container{
+        width: 1140px;
+        height: 100px;
+        margin: 0% auto;
+        
+        .main_div1{
+            width: 1000px;
+            margin: auto;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif ;
+            font-size: large;
+            .main_span1{
+                margin-right: 250px;
+                .main_link{
+                    margin-left: 40px;
+                    text-decoration: none;
+                    color: black;
+                    transition: .5s;
+                }
+                .main_link:hover{
+                    color: #5FB848;
+                }
+            }
+            .main_span2{
+                .main_link2{
+                    color: black;
+                    transition: .5s;
+                    padding: 10px 20px ;
+                    border-radius: 20px;
+
+                }
+                .main_link2:hover{
+                    background-color: #494949;
+                    color: white;
+                }
+            }
+        }
+        .main_div2{
+            width: 900px;
+            margin: auto;
+            display: flex;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 50px;
+            .main_box1{
+                width: 500px;
+                height: 500px;
+                .main_text{
+                    font-size: 60px;
+                    font-weight: 600;
+                    line-height: 70px;
+                }
+                .main_subtext{
+                    font-size: larger;
+                    width: 390px;
+                }
+                .main_link3{
+                    padding: 10px 30px;
+                    align-items: center;
+                    color: black;
+                    font-size: larger;
+                    background-color: gainsboro;
+                    border-radius: 25px;
+                    transition: .5s;
+                }
+                .main_link3:hover{
+                    background-color: black;
+                    color: white;
+                }
+            }
+            .main_box2{
+                width: 600px;
+                height: 500px;
+                position: relative;
+                .main_img{
+                    width: 110%;
+                    
+                }
+                .main_img2{
+                    position: absolute;
+                    width: 110%;
+                    top: 10px;
+                }
+            }
+                
+        }
+    }
+}
+
